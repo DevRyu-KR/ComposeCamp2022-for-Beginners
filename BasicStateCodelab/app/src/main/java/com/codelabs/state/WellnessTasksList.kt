@@ -18,6 +18,7 @@ package com.codelabs.state
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 
 @Composable
@@ -32,11 +33,6 @@ fun WellnessTasksList(
     ) {
         items(
             items = list,
-            /**
-             * Use key param to define unique keys representing the items in a mutable list,
-             * instead of using the default key (list position). This prevents unnecessary
-             * recompositions.
-             */
             key = { task -> task.id }
         ) { task ->
             WellnessTaskItem(

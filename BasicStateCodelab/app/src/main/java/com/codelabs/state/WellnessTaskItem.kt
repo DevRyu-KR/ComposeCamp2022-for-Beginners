@@ -37,8 +37,7 @@ fun WellnessTaskItem(
     modifier: Modifier = Modifier
 ) {
     Row(
-        modifier = modifier,
-        verticalAlignment = Alignment.CenterVertically
+        modifier = modifier, verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
             modifier = Modifier
